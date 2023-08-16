@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header/>
+    <soap:Body>
+        <XacuteRequest xmlns="http://www.sap.com/xMII">
+            <LoginName/>
+            <LoginPassword/>
+            <InputParams>
+                <input>{"kafkaSapOrderReadyMessage" : [{
+                    "RUECK" : "0257022046",
+                    "SATZA" : "L40",
+                    "PERNR" : "87654321",
+                    "APPL_ID" : "XXX"
+                    }]
+                    }</input>
+            </InputParams>
+        </XacuteRequest>
+    </soap:Body>
+</soap:Envelope>
