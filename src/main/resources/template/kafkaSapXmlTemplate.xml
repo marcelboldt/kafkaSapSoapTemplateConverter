@@ -3,16 +3,10 @@
     <soap:Header/>
     <soap:Body>
         <XacuteRequest xmlns="http://www.sap.com/xMII">
-            <LoginName/>
-            <LoginPassword/>
+            <LoginName/>${login_name}
+            <LoginPassword/>${login_password}
             <InputParams>
-                <input>{"kafkaSapOrderReadyMessage" : [{
-                    "RUECK" : "0257022046",
-                    "SATZA" : "L40",
-                    "PERNR" : "87654321",
-                    "APPL_ID" : "XXX"
-                    }]
-                    }</input>
+                <input>${message}</input>
             </InputParams>
         </XacuteRequest>
     </soap:Body>
